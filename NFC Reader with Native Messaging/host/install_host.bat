@@ -1,0 +1,1 @@
+REG ADD "HKCU\Software\Google\Chrome\NativeMessagingHosts\chrome.nfcbridge.win32" /ve /t REG_SZ /d "%~dp0manifest-win.json" /f

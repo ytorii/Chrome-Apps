@@ -1,0 +1,21 @@
+﻿2015/02/09 18:06:10 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Documents and Settings\torii\My Documents\Visual Studio 2010\Projects\NFCReaderTest\NFCReaderTest\NFCReaderTest.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Debug\chrome.nfcbridge.win32.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W1 /WX- /Od /Oy- /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt chrome.nfcbridge.win32.cpp
+         chrome.nfcbridge.win32.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\torii\My Documents\Visual Studio 2010\Projects\NFCReaderTest\Debug\chrome.nfcbridge.win32.exe" /NOLOGO /LIBPATH:"C:\Program Files\Microsoft SDKs\Windows\v7.0A\Lib" winscard.lib crypt32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\chrome.nfcbridge.win32.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\Documents and Settings\torii\My Documents\Visual Studio 2010\Projects\NFCReaderTest\Debug\chrome.nfcbridge.win32.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\torii\My Documents\Visual Studio 2010\Projects\NFCReaderTest\Debug\chrome.nfcbridge.win32.lib" /MACHINE:X86 Debug\chrome.nfcbridge.win32.obj
+     1>chrome.nfcbridge.win32.obj : warning LNK4075: /EDITANDCONTINUE は /OPT:ICF の指定によって無視されます。
+         NFCReaderTest.vcxproj -> C:\Documents and Settings\torii\My Documents\Visual Studio 2010\Projects\NFCReaderTest\Debug\chrome.nfcbridge.win32.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Documents and Settings\torii\My Documents\Visual Studio 2010\Projects\NFCReaderTest\Debug\chrome.nfcbridge.win32.exe;#1" /manifest Debug\chrome.nfcbridge.win32.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         ファイル "Debug\chrome.nfcbridge.win32.unsuccessfulbuild" を削除しています。
+         "Debug\chrome.nfcbridge.win32.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Documents and Settings\torii\My Documents\Visual Studio 2010\Projects\NFCReaderTest\NFCReaderTest\NFCReaderTest.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:04.89

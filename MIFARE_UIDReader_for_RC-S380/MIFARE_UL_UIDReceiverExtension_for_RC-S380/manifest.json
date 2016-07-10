@@ -1,0 +1,23 @@
+{
+  "name": "MIFARE UL UID Receiver Extension for RC-S380",
+  "version": "1.0.2",
+  "manifest_version": 2,
+  "options_page": "option.html",
+  "description": "Sending MIFARE Ultralight Card UID to your web page.",
+ 
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": true
+  },
+
+  "content_scripts":[
+
+    {
+      "matches":["http://*/*", "https://*/*", "file://*" ],
+      "js":["jquery.min.js", "contentScript.js"]
+    }
+
+   ],
+
+  "permissions": ["tabs"]
+}

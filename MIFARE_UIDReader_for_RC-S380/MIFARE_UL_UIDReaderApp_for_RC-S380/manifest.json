@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.1",
+  "name": "MIFARE UL UID Reader App for RC-S380",
+  "description": "Sending MIFARE Ultralight card UID to your web pages.",
+  "minimum_chrome_version": "23",
+  "app": {
+    "background": {
+      "scripts": ["jquery.min.js", "functionsLib.js", "UIDReaderApp.js"],
+      "persistent": true
+    }
+  },
+  "permissions": [
+      "usb",
+      { "usbDevices": [{"vendorId": 1356, "productId": 1731 }, {"vendorId": 1356, "productId": 1729 }] }
+   ]
+}

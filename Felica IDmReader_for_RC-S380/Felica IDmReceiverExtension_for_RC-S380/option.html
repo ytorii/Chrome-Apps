@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <title>IDm Reciever Extension Option Page</title>
+
+    <script src="jquery.min.js"></script>
+
+  </head>
+
+  <body>
+    <h2>IDm Reciever Extension Option</h2>
+
+    Current registered App's ID is : <a id="currentAppId"></a><br /><br />
+
+    <input id="key" type="hidden" value="idmReaderApp" />
+    Enter new App's ID : <input id="idmReaderAppId" type="text" />
+    <input id="put" type="submit" value="Save" /><br /><br />
+
+    <h3>Felica Card Infomation</h3>
+
+    <label for="startPolling">This card's ID : <input id="felicaIDm" type="text" size="35" readonly /></label>
+    <button id="startPolling">get IDm</button><br/><br/>
+
+    <label for="felicaCKV">Card Key Version : </label>
+    <input id="felicaCKV" type="text" size=40 readonly ></input><br/><br/>
+
+    <label for="felicaRandomNum">Random Number : </label>
+    <input id="felicaRandomNum" type="text" size=40 readonly ></input><br/><br/>
+
+    <label for="felicaRandomRes">Random Challenge Response : </label>
+    <input id="felicaRandomRes" type="text" size=40 readonly ></input><br/><br/>
+
+    <h3>FelicaLite-S user ID and Key Registration</h3>
+    
+    <label for="felicaUserId">Enter User ID : </label>
+    <input id="felicaUserId" type="text" length=24></input><br /><br />
+
+    <label for="felicaCKVInput">Enter Card Key Version: </label>
+    <input id="felicaCKVInput" type="text" length=10 size=15></input><br/><br/>
+
+    <label for="felicaMasterKey">Enter Master Key : </label>
+    <input id="felicaMasterKey" type="text" length=48 size=55></input>
+    <button id="writeCardId">write userID</button><br/><br/>
+
+    <label for="getCardId">Check the registered userID : </label>
+    <button id="getCardId">get cardID</button><br/><br/>
+
+    Note : The userID must be 0 - 281474976710655 integral number and registered as hex number in the card.<br/>
+    Note : The card key version must be 0 - 65535 integral number and registered as hex number in the card.<br/>
+    Note : The master key must be 24bytes hex number string.<br/>
+    Caution : You can rewrite card's user ID and Key, so be careful not to rewrite wrong cards!<br/><br/>
+
+    <h3>FelicaLite-S card Authenticatoin</h3>
+    
+    <label for="authCard">The card authentication by sending Random Challenge : </label>
+    <button id="authCard">send Random Challenge</button><br/><br/>
+
+    <h3>Verify the above Random Challenge Response</h3>
+
+    <label for="verifyRc">Enter Master Key : <input id="verifyKey" type="text" length=48 size=55></input></label>
+    <button id="verifyRc">verify</button><br/><br/>
+
+    <label for="felicaRandomCal">Random Challenge Number   : </label>
+    <input id="felicaRandomCal" type="text" size=40 readonly ></input><br/><br/>
+
+    Caution : Entering master key in the web page is NOT SAFE !! <br/>
+    Note : Please use this function only for testing.<br/>
+    Note : In actual use, veryfication should be executed in the server sides.<br/><br/>
+
+  </body>
+
+  <script src="options.js"></script>
+  <script src="contentScript.js"></script>
+
+</html>

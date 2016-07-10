@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MIFARE Ultralight UID Reciever Extension Option Page</title>
+
+    <script src="jquery.min.js"></script>
+
+    <script src="options.js"></script>
+  </head>
+
+  <body>
+    <h3>UID Reciever Extension Option</h3>
+
+    Current registered App's ID is : <a id="currentAppId"></a><br /><br />
+
+    <input id="key" type="hidden" value="uidReaderApp" />
+    Enter new App's ID : <input id="uidReaderAppId" type="text" />
+    <input id="put" type="submit" value="Save" /><br /><br />
+
+    <label>This card's UID is <input id="mifareulUID" type="text"  readonly /></label>
+    <br/>
+
+    <button id="startMifarePolling">get UID</button>
+    <br/>
+    <a id="mifareLog"></a>
+
+  </body>
+
+</html>
